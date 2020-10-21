@@ -3,7 +3,7 @@ import { Avatar } from '@material-ui/core';
 
 import './SidebarChat.css'
 
-function SidebarChat({ addNewChat }) {
+function SidebarChat({ id, name, addNewChat }) {
 
     const [seed, setSeed] = useState("")
 
@@ -12,9 +12,9 @@ function SidebarChat({ addNewChat }) {
     }, [])
 
     const creatChat = () => {
-        const chatName = prompt('Please, enter name for chat')
+        const roomName = prompt('Please, enter name for chat')
 
-        if (chatName) {
+        if (roomName) {
             //DO SOME DATASE STUFF...
 
         }
@@ -27,7 +27,7 @@ function SidebarChat({ addNewChat }) {
                 src={`https://avatars.dicebear.com/api/human/${seed}.svg`}
             />
             <div className="sidebarChat__info">
-                <h2>Fulano</h2>
+                <h2>{name}</h2>
                 <p>Last message...</p>
             </div>
         </div>
