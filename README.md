@@ -14,6 +14,8 @@ The project was created with:
 - Node.JS
 - CSS
 - Material-UI
+- Firebase
+- Google Authentication
 
 ## Installers
 If you want to instal:
