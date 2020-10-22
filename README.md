@@ -21,6 +21,6 @@ If you want to instal:
 # Install 
 $ npm install
 
-# Run launchstore
+# Run whatsapp-clone
 $ npm start
 ```
